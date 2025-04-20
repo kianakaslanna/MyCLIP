@@ -1,0 +1,32 @@
+cfg_voc21
+aAcc: 62.6
+mIoU: 32.01
+mAcc: 72.68
+VIT: ViT-B/16
+CLIP: CLIP
+MODEL: vanilla
+Dataset: PascalVOCDataset
+cfg_voc20
+aAcc: 83.79
+mIoU: 75.74
+mAcc: 88.32
+VIT: ViT-B/16
+CLIP: CLIP
+MODEL: vanilla
+Dataset: PascalVOC20Dataset
+cfg_voc20
+aAcc: 88.84
+mIoU: 80.92
+mAcc: 90.35
+VIT: ViT-B/16
+CLIP: CLIP
+MODEL: ClearCLIP
+Dataset: PascalVOC20Dataset
+cfg_voc20
+aAcc: 88.84
+mIoU: 80.93
+mAcc: 90.35
+VIT: ViT-B/16
+CLIP: CLIP
+MODEL: MYCLIP
+Dataset: PascalVOC20Dataset
