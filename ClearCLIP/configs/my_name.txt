@@ -1,5 +1,4 @@
-sky
-hill
-tree
-horse
+status
 grass
+building
+sky

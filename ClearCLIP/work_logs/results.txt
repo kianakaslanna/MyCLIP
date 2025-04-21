@@ -1,11 +1,3 @@
-cfg_voc21
-aAcc: 62.6
-mIoU: 32.01
-mAcc: 72.68
-VIT: ViT-B/16
-CLIP: CLIP
-MODEL: vanilla
-Dataset: PascalVOCDataset
 cfg_voc20
 aAcc: 83.79
 mIoU: 75.74
@@ -13,6 +5,7 @@ mAcc: 88.32
 VIT: ViT-B/16
 CLIP: CLIP
 MODEL: vanilla
+
 Dataset: PascalVOC20Dataset
 cfg_voc20
 aAcc: 88.84
@@ -22,11 +15,70 @@ VIT: ViT-B/16
 CLIP: CLIP
 MODEL: ClearCLIP
 Dataset: PascalVOC20Dataset
+
 cfg_voc20
-aAcc: 88.84
-mIoU: 80.93
-mAcc: 90.35
+aAcc: 87.14
+mIoU: 77.93
+mAcc: 88.65
 VIT: ViT-B/16
 CLIP: CLIP
 MODEL: MYCLIP
 Dataset: PascalVOC20Dataset
+
+cfg_voc20
+aAcc: 88.47
+mIoU: 80.23
+mAcc: 89.7
+VIT: ViT-B/16
+CLIP: CLIP
+MODEL: GEM
+Dataset: PascalVOC20Dataset
+cfg_voc20
+aAcc: 86.16
+mIoU: 77.88
+mAcc: 89.37
+VIT: ViT-B/16
+CLIP: CLIP
+MODEL: SCLIP
+Dataset: PascalVOC20Dataset
+cfg_voc20
+aAcc: 75.24
+mIoU: 61.41
+mAcc: 75.75
+VIT: ViT-B/16
+CLIP: CLIP
+MODEL: MaskCLIP
+Dataset: PascalVOC20Dataset
+cfg_voc20
+aAcc: 83.79
+mIoU: 75.74
+mAcc: 88.32
+VIT: ViT-B/16
+CLIP: CLIP
+MODEL: vanilla
+Dataset: PascalVOC20Dataset
+cfg_voc20
+aAcc: 88.46
+mIoU: 80.2
+mAcc: 90.74
+VIT: ViT-L-14
+CLIP: CLIP
+MODEL: GEM
+Dataset: PascalVOC20Dataset
+cfg_voc20
+aAcc: 88.62
+mIoU: 80.44
+mAcc: 91.22
+VIT: ViT-L-14
+CLIP: CLIP
+MODEL: MYCLIP
+Dataset: PascalVOC20Dataset
+cfg_voc20
+aAcc: 88.01
+mIoU: 79.99
+mAcc: 91.05
+VIT: ViT-L-14
+CLIP: CLIP
+MODEL: ClearCLIP
+Dataset: PascalVOC20Dataset
+

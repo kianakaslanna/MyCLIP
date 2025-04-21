@@ -615,8 +615,18 @@ class VisionTransformer(nn.Module):
             qq_attn = torch.bmm(q, q.transpose(1, 2)) * scale
             attn_weights = F.softmax(qq_attn, dim=-1)
         elif model_type == 'MYCLIP':
+            # 计算q-q/k-k/v-v三种自相关
             qq_attn = torch.bmm(q, q.transpose(1, 2)) * scale
-            attn_weights = F.softmax(qq_attn, dim=-1)
+            kk_attn = torch.bmm(k, k.transpose(1, 2)) * scale
+            vv_attn = torch.bmm(v, v.transpose(1, 2)) * scale
+            
+            # 分别softmax后相加（保留各自分布特性）
+            attn_weights = F.softmax(qq_attn, dim=-1) + \
+                        F.softmax(kk_attn, dim=-1) + \
+                        F.softmax(vv_attn, dim=-1)
+            
+            # 归一化（保证注意力权重和为1）
+            attn_weights = attn_weights / attn_weights.sum(dim=-1, keepdim=True)
             
         attn_output = torch.bmm(attn_weights, v)
         attn_output = attn_output.transpose(0, 1).contiguous().view(-1, bsz, embed_dim)

@@ -2,7 +2,7 @@
 model = dict(
     type='ClearCLIPSegmentation',
     clip_type='CLIP',     # 'CLIP', 'BLIP', 'OpenCLIP', 'MetaCLIP', 'ALIP'
-    vit_type='ViT-B/16',      # 'ViT-B/16', 'ViT-L-14'
+    vit_type='ViT-L-14',      # 'ViT-B/16', 'ViT-L-14'
     model_type='MYCLIP',   # 'vanilla', 'MaskCLIP', 'GEM', 'SCLIP', 'ClearCLIP', 'MYCLIP'
     ignore_residual=True,
 )

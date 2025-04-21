@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 from torchvision import transforms
 from clearclip_segmentor import ClearCLIPSegmentation
 
-img = Image.open('images/horses.jpg')
-name_list = ['sky', 'hill', 'tree', 'horse', 'grass']
+img = Image.open('/home/qta2szh/CLIP/pictures/002d1af4b54042afa4f3f36ccfa5940e.jpeg')
+name_list = ['sky', 'building', 'car', 'status', 'ground', 'tree']
 
 with open('./configs/my_name.txt', 'w') as writers:
     for i in range(len(name_list)):
@@ -25,10 +25,10 @@ img_tensor = img_tensor.unsqueeze(0).to('cuda')
 model = ClearCLIPSegmentation(
     clip_type='CLIP',
     vit_type='ViT-B/16',
-    model_type='ClearCLIP',
+    model_type='MaskCLIP',
     name_path='./configs/my_name.txt',
     ignore_residual=True,
-    prob_thd=0.0,  # need to adjust if background is given
+    prob_thd=0.1  # need to adjust if background is given
 )
 
 seg_pred = model.predict(img_tensor, data_samples=None)
