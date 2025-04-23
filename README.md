@@ -5,6 +5,8 @@
 ## /home/qta2szh/CLIP/ClearCLIP/work_logs/results.txt分析结果
 '''
 python eval.py     --config /home/qta2szh/CLIP/ClearCLIP/configs/cfg_voc20.py     --work-dir /home/qta2szh/CLIP/ClearCLIP/work_logs
+python eval.py     --config /home/qta2szh/CLIP/ClearCLIP/configs/cfg_coco_stuff164k.py  --work-dir /home/qta2szh/CLIP/ClearCLIP/work_logs
+python eval.py     --config /home/qta2szh/CLIP/ClearCLIP/configs/cfg_ade20k.py  --work-dir /home/qta2szh/CLIP/ClearCLIP/work_logs
 '''
 
 # 2.NACLIP

@@ -1,0 +1,24 @@
+cfg_voc20
+aAcc: 88.84
+mIoU: 80.92
+mAcc: 90.35
+VIT: ViT-B/16
+CLIP: CLIP
+MODEL: ClearCLIP
+Dataset: PascalVOC20Dataset
+cfg_coco_stuff164k
+aAcc: 39.74
+mIoU: 23.89
+mAcc: 42.63
+VIT: ViT-B/16
+CLIP: CLIP
+MODEL: ClearCLIP
+Dataset: COCOStuffDataset
+cfg_ade20k
+aAcc: 40.19
+mIoU: 16.65
+mAcc: 35.44
+VIT: ViT-B/16
+CLIP: CLIP
+MODEL: ClearCLIP
+Dataset: ADE20KDataset
