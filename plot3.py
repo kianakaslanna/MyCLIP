@@ -96,7 +96,7 @@ def generate_arch_table(arch):
     for col, width in enumerate(col_widths):
         table.auto_set_column_width(col=col)
     
-    plt.title(f"Performance Comparison ({arch})", pad=20, fontsize=12, fontweight='bold')
+    plt.title(f"Performance Comparison ({arch})", pad=5, fontsize=12, fontweight='bold')
     safe_arch = arch.replace("/", "_")
     plt.savefig(f"{safe_arch}_comparison_2.png", dpi=300, bbox_inches="tight")
     plt.close()
